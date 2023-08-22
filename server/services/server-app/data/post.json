@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Chat GPT Powered Teams Private Virtual Agent",
+    "slug": "",
+    "content": "Full Private Virtual Agents are great, the lates update to its NLP and auto topic creation make it incredibly powerful. But unlike Power Automate and Power Apps its locked behind expensive license and usage costs.So if we wanted to generate multiple knowledge article chatbots bots we really need a different option.That leaves 2 options, Power Apps and Power Virtual Agents for Teams. Surprisingly Power Apps has more power to create intelligent chatbots then PVA for teams, as the Teams Dataverse environments don't allow AI Builder or Custom Connectors. Fortunately, there is a work around, and now an easy way to leverage Chat GPT functionality.",
+    "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--cbEV_9A---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z81eczx9spcinpbepqzw.png",
+    "categoryId": 2,
+    "authorId": "64b90470279149d1d6461c5d"
+  },
+  {
+    "title": "44 Web Design Tools For Developers In 2023",
+    "slug": "",
+    "content": "The use of web design tools helps create websites quickly and effectively. These tools offer a variety of functions that let designers generate and improve websites. Web design tools enable users to unleash their creativity and develop visually appealing and useful websites due to their user-friendly interfaces and extensive features.",
+    "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--idcY1Z1d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/je2d9qdnlpt2o009v72u.png",
+    "categoryId": 3,
+    "authorId": "64b90470279149d1d6461c5d"
+  },
+  {
+    "title": "Exploring the AWS CI/CD Landscape: A Comprehensive Overview of Tools and Services",
+    "slug": "",
+    "content": "CI/CD has revolutionized the way software is developed by introducing a culture of automation, collaboration, and faster feedback loops into the development lifecycle. It has enabled developers to deliver higher-quality software at a faster pace, with reduced risk and greater customer satisfaction. As organizations strive for faster and more reliable software delivery, CI/CD has emerged as a crucial practice. Throughout this write-up, we are going to explore the AWS CI/CD landscape, where a multitude of powerful tools and services exist. From source code management and automated testing to build automation, deployment orchestration, and monitoring, AWS offers a rich ecosystem of solutions to streamline and optimize the software delivery process. Fasten your proverbial seatbelt as we cruise through the CI/CD terrain of AWS, unravelling the services that can transform your development workflows and empower your team to deliver high-quality software with speed and confidence.",
+    "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--3imY6DNj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/zpfkj8255xaa5yfwy20s.png",
+    "categoryId": 2,
+    "authorId": "64b90470279149d1d6461c5d"
+  },
+  {
+    "title": "Learning JavaScript: addEventListener",
+    "slug": "",
+    "content": "The most interesting thing that I have learned so far is addEventListener. This method allows for an event to happen that is called in a function. Events are actions made by the user or browser such as pressing play on a video or clicking a link which directs you to another page. There are so may events to choose from to make your browser interactive and entertaining! Below are just a few examples:click,keydown,blur,cut,mouseover,copy,keyup,paste. addEventListener consists of 2 parameters: the event (defines the event name) and the function(responds to the event). ",
+    "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--E5vxVnTw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x6ss4jm0gwwhfnl86o37.jpg",
+    "categoryId": 2,
+    "authorId": "64b90470279149d1d6461c5d"
+  }
+]

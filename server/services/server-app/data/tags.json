@@ -1,0 +1,18 @@
+[
+  {
+    "name": "gpt",
+    "postId": "1"
+  },
+  {
+    "name": "webdesign",
+    "postId": "2"
+  },
+  {
+    "name": "cicd",
+    "postId": "3"
+  },
+  {
+    "name": "beginners",
+    "postId": "4"
+  }
+]

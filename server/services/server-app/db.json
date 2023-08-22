@@ -1,0 +1,22 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "How to Use Dependency Injection with Node.js",
+      "slug": "How-to-Use-Dependency",
+      "content": "Node.js has emerged as a dominant force in the world of web development, allowing developers to build highly scalable and efficient applications. However, managing dependencies can become challenging with Node.js as the projects grow in size and complexity. ",
+      "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--cz5oGF5u--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://static-assets.amplication.com/blog/how-to-use-dependency-injection-with-nodejs/hero.png",
+      "categoryId": 1,
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "What is HTTPS and how does it work?",
+      "slug": "What-is-HTTPS",
+      "content": "The first step to having an understanding of HTTPS is to know its ancestor: HTTP. Hypertext Transfer Protocol (HTTP) is a common protocol for communicating between websites and browsers throughout the Internet. With the help of HTTP, all the information and connection of the entire World Wide Web are formed, and it is not a lie to say that HTTP is the major factor that backbone to the creation of the Internet we are using today.",
+      "imgUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--BO5zQAX1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mroweokuy3b165flae9x.jpg",
+      "categoryId": 1,
+      "authorId": 1
+    }
+  ]
+}

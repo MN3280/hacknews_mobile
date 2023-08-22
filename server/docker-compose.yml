@@ -1,0 +1,24 @@
+services:
+  app_service:
+    build: ./services/server-app
+    ports:
+      - "4002:4002"
+    environment:
+      - JWT_SECRET
+      - PORT
+  user_service:
+    build: ./services/server-user
+    ports:
+      - "4001:4001"
+    environment:
+      - PORT
+      - CONNECTIONSTRING
+  orchestrator_graphql:
+    build: ./orchestractor-graphql
+    ports:
+      - "80:4000"
+    environment:
+      - BASE_URL=http://app_service:4002
+      - BASE_URL_USER=http://user_service:4001
+      - PORT_REDIS
+      - REDIS
