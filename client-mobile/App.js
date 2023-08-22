@@ -5,7 +5,6 @@ import { ApolloProvider } from "@apollo/client";
 import client from "./config";
 
 
-
 export default function App() {
   return (
     <ApolloProvider client={client}>

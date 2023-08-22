@@ -1,13 +1,13 @@
+if (process.env.NODE_ENV !== "production") {
+    require("dotenv").config()
+}
+
 const axios = require('axios');
 const Redis = require('ioredis');
-const redis = new Redis(
-    16407,
-    "redis://default:VNrKAHGBOA3UbpKpL4J9E5jFxRTV9zvR@redis-16407.c295.ap-southeast-1-1.ec2.cloud.redislabs.com:16407"
-);
+const redis = new Redis(process.env.PORT_REDIS, process.env.REDIS)
 const BASE_URL_USER = process.env.BASE_URL_USER || "http://localhost:4001";
 
 class UserController {
-
     static async readUser(req, res, next) {
         try {
             let user = await redis.get("user:get");
@@ -24,13 +24,10 @@ class UserController {
                 url: `${BASE_URL_USER}/users`
             })
             redis.set("user:get", JSON.stringify(data))
-
             res.status(200).json({
                 statusCode: 200,
                 data
             })
-
-
         } catch (err) {
             console.log(err);
         }
@@ -39,7 +36,6 @@ class UserController {
     static async register(req, res, next) {
         try {
             const { username, email, phoneNumber, password, address } = req.body
-
 
             const { data } = await axios({
                 method: 'POST',
@@ -55,16 +51,13 @@ class UserController {
                     address: address
                 }
             })
-
             const keys = await redis.keys("user:*");
             await redis.del(keys);
-
             res.status(201).json({
                 statusCode: 201,
                 username: data.username,
                 email: data.email,
             })
-
         } catch (err) {
             console.log(err);
         }
@@ -77,12 +70,10 @@ class UserController {
                 method: 'GET',
                 url: `${BASE_URL_USER}/users/${id}`
             })
-
             res.status(200).json({
                 statusCode: 200,
                 data
             })
-
         } catch (err) {
             console.log(err);
         }
@@ -95,7 +86,6 @@ class UserController {
                 method: 'DELETE',
                 url: `${BASE_URL_USER}/users/${id}`
             })
-
             res.status(200).json({
                 statusCode: 200,
                 data

@@ -8,7 +8,6 @@ import { GET_POST } from '../queries';
 
 const HomePage = ({ navigation }) => {
     const { data, loading, error } = useQuery(GET_POST);
-
     const detailPage = (id) => {
         navigation.navigate("Detail", {
             id

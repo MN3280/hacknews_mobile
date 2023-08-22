@@ -6,10 +6,9 @@ import { DETAIL_POST } from "../queries";
 
 const DetailPage = ({ route, navigation }) => {
     const { id } = route.params;
-    const { data, loading, error } = useQuery(DETAIL_POST, {
+    const { data } = useQuery(DETAIL_POST, {
         variables: { postDetailId: id },
     });
-
     return (
         <ScrollView >
             <Card style={styles.container}>

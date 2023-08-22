@@ -1,5 +1,4 @@
 const { Post, Tag, sequelize, Category } = require('../models/index')
-const { Op } = require("sequelize")
 const { slugify } = require('../helpers/createSlug')
 
 
@@ -36,10 +35,7 @@ class PostController {
             })
         } catch (err) {
             next(err)
-
         }
-
-
     }
 
     static async RenderPostDetail(req, res, next) {
@@ -103,7 +99,6 @@ class PostController {
                 { name: name2, postId: create.id }
             ],
                 { transaction: t })
-
             await t.commit()
             res.status(201).json({
                 statusCode: 201,

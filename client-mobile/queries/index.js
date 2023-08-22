@@ -1,4 +1,4 @@
-import { useLazyQuery, gql } from "@apollo/client";
+import { gql } from "@apollo/client";
 
 export const GET_POST = gql`
   query Posts {

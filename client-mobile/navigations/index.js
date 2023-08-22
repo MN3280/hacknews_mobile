@@ -5,9 +5,8 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import AboutPage from '../views/AboutPage';
 import Stacked from "../components/Stacked"
 import CategoryPage from '../views/CategoryPage';
-
-
 const Tab = createBottomTabNavigator();
+
 
 const StackPage = () => {
     return (

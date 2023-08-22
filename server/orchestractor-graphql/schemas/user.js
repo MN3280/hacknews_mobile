@@ -6,7 +6,6 @@ const axios = require('axios');
 const BASE_URL_USER = process.env.BASE_URL_USER
 
 const typeDefs = `#graphql
-
   type User {
     username:String
     email:String       
@@ -80,7 +79,6 @@ const resolvers = {
                         address: address
                     }
                 })
-
                 return data
             } catch (err) {
                 console.log(err);
@@ -93,7 +91,6 @@ const resolvers = {
                     method: "DELETE",
                     url: `${BASE_URL_USER}/users/${id}`
                 })
-
                 return data
             } catch (err) {
                 console.log(err);

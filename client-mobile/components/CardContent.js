@@ -1,4 +1,4 @@
-import { Button, Card, Text } from 'react-native-paper';
+import { Card, Text } from 'react-native-paper';
 import { StyleSheet, Pressable, View } from 'react-native';
 
 

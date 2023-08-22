@@ -1,9 +1,10 @@
-import { Card, Text } from "react-native-paper"
-import React, { useCallback } from 'react';
-import { Alert, Button, Linking, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Text } from "react-native-paper"
+import React from 'react';
+import { Linking, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
 const supportedURL = 'https://github.com/MN3280';
+
+
 const handlePress = async () => {
     await Linking.openURL(supportedURL);
 };
